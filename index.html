@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Fresh Market — Oziq-ovqat do'koni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="container hero__in">
+            <div>
+                <h1>Yangi va tabiiy mahsulotlar <br>eshigingizgacha</h1>
+                <p>30 xil oziq-ovqat mahsuloti: meva, sabzavot, sut, go'sht va boshqalar. Tez va qulay buyurtma.</p>
+                <a class="btn btn--primary" href="#catalog">Katalogga o'tish →</a>
+            </div>
+            <div class="hero__art">
+                <span>🍎</span><span>🥕</span><span>🧀</span><span>🍞</span><span>🍓</span><span>🥑</span></div>
+        </div>
+    </section>
+    <div class="container perks">
+        <div>🚚 Tezkor yetkazish</div>
+        <div>🌿 Tabiiy mahsulot</div>
+        <div>💳 Qulay to'lov</div>
+        <div>⭐ Sifat kafolati</div>
+    </div>
+    <a class="promo-strip" id="promoStrip" href="aksiyalar.html" hidden>🎉 <span id="promoTxt"></span> →</a>
+    <main class="container section" id="catalog">
+        <h2>Mahsulotlar katalogi</h2>
+        <div class="toolbar">
+            <div class="chips" id="chips"></div><input class="input" id="search" placeholder="🔍 Qidirish..."
+                style="max-width:260px">
+        </div>
+        <div class="grid" id="grid"></div>
+    </main>
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/pages.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+.header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(12px);border-bottom:1px solid $c-border;
+  &__in{@include flex(space-between,center,12px);flex-wrap:wrap;min-height:70px;padding-block:10px}
+  .logo{font-weight:800;font-size:1.35rem;color:$c-primary}
+  &__actions{@include flex(center,center,10px)}
+  .user-chip{display:none;font-size:.85rem;@include up(md){display:block}}}
+.nav{order:3;width:100%;@include flex(flex-start,center,4px);overflow-x:auto;scrollbar-width:none;
+  &::-webkit-scrollbar{display:none}
+  @include up(md){order:0;width:auto;flex:1;justify-content:center}
+  a{padding:8px 14px;border-radius:50px;font-weight:600;font-size:.9rem;white-space:nowrap;opacity:.8;transition:.2s;
+    &:hover,&.active{background:#dcfce7;color:$c-primary;opacity:1}}}
+.cart-btn{position:relative;padding:10px 14px;border-radius:50px;background:$c-primary;color:#fff;
+  &.bump{animation:bump .4s}
+  b{position:absolute;top:-6px;right:-4px;background:$c-accent;border-radius:50%;min-width:22px;height:22px;font-size:.75rem;@include flex}}

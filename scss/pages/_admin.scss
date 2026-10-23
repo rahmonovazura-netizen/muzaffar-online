@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+.admin{display:grid;min-height:100vh;@include up(lg){grid-template-columns:230px 1fr}
+  aside{background:#12301c;color:#fff;padding:22px;@include flex(space-between,center,10px);flex-wrap:wrap;@include up(lg){display:block;h2{margin-bottom:24px}}
+    a{display:inline-block;padding:10px 14px;border-radius:12px;opacity:.85;&:hover{background:rgba(255,255,255,.12)}}}
+  main{padding:24px;overflow:auto}}
+.stats{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:24px;
+  div{background:#fff;padding:18px;border-radius:$radius;box-shadow:$shadow;animation:fadeUp .6s both;b{display:block;font-size:1.6rem;color:$c-primary}}}
+.panel{background:#fff;border-radius:$radius;box-shadow:$shadow;padding:20px;margin-bottom:24px;overflow-x:auto}
+.form-row{display:grid;gap:10px;margin-bottom:14px;@include up(md){grid-template-columns:repeat(5,1fr)}}
+.check{@include flex(flex-start,center,8px);font-weight:600;font-size:.92rem;cursor:pointer;input{width:18px;height:18px;accent-color:$c-primary}}
+table{width:100%;border-collapse:collapse;min-width:560px;th,td{text-align:left;padding:10px;border-bottom:1px solid $c-border;font-size:.9rem}}
+.login-box{max-width:340px;margin:18vh auto;background:#fff;padding:30px;border-radius:$radius;box-shadow:$shadow;display:grid;gap:12px}

@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+.btn{padding:12px 22px;border-radius:50px;font-weight:600;transition:.25s;display:inline-flex;align-items:center;gap:8px;
+  &--primary{background:$c-primary;color:#fff;&:hover{background:$c-primary-d;transform:translateY(-2px);box-shadow:$shadow-lg}}
+  &--ghost{border:2px solid $c-border;background:#fff;&:hover{border-color:$c-primary}}
+  &--danger{background:$c-danger;color:#fff} &--sm{padding:7px 14px;font-size:.85rem}}
+.chip{padding:8px 16px;border-radius:50px;background:#fff;border:1px solid $c-border;transition:.2s;
+  &:hover{border-color:$c-primary} &.active{background:$c-primary;color:#fff;border-color:$c-primary}}
+.input{padding:11px 16px;border-radius:12px;border:1px solid $c-border;background:#fff;width:100%;outline:0;&:focus{border-color:$c-primary;box-shadow:0 0 0 3px rgba(22,163,74,.15)}}

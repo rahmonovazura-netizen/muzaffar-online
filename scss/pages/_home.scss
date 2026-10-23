@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+.hero{background:linear-gradient(135deg,rgba(220,252,231,.9),rgba(254,249,195,.9));padding:56px 0 70px;position:relative;overflow:hidden;
+  &__in{display:grid;gap:30px;align-items:center;@include up(md){grid-template-columns:1.1fr 1fr}}
+  p{margin:14px 0 24px;max-width:480px;color:$c-muted}
+  &__art{position:relative;height:260px;span{position:absolute;font-size:4.5rem;animation:float 5s ease-in-out infinite;
+    @for $i from 1 through 6{&:nth-child(#{$i}){left:#{($i*15)%80}#{'%'};top:#{($i*37)%65}#{'%'};animation-delay:#{$i*.5}s;font-size:#{3+$i*.3}rem}}}}}
+.perks{display:grid;gap:14px;margin-top:-34px;position:relative;grid-template-columns:repeat(2,1fr);@include up(md){grid-template-columns:repeat(4,1fr)}
+  div{background:#fff;padding:16px;border-radius:$radius;box-shadow:$shadow;text-align:center;font-weight:600;font-size:.9rem}}

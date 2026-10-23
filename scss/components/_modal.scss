@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+.overlay{position:fixed;inset:0;background:rgba(10,30,15,.55);backdrop-filter:blur(5px);z-index:100;@include flex;padding:16px;opacity:0;pointer-events:none;transition:.3s;
+  &.open{opacity:1;pointer-events:auto;.modal{animation:pop .45s cubic-bezier(.2,.9,.3,1.2)}}}
+.modal{background:#fff;border-radius:24px;padding:34px 28px;width:min(420px,100%);text-align:center;position:relative;
+  .emoji{font-size:3.2rem;animation:float 3s infinite} h2{margin:10px 0 6px} .warn{background:#fff7e0;color:#92600a;border-radius:12px;padding:10px;margin:14px 0;font-size:.88rem}
+  .stack{display:grid;gap:12px;margin-top:18px} .close{position:absolute;top:14px;right:18px;font-size:1.6rem}
+  .g-btn{@include flex(center,center,10px);padding:12px;border:2px solid $c-border;border-radius:50px;font-weight:600;transition:.25s;&:hover{border-color:#4285f4;background:#f3f7ff}}}
+.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,120px);background:#12301c;color:#fff;padding:12px 22px;border-radius:50px;z-index:200;transition:.4s;&.show{transform:translate(-50%,0)}}

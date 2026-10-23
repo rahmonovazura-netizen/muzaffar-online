@@ -1,0 +1,6 @@
+@use "../abstracts" as *;
+.grid{display:grid;gap:18px;grid-template-columns:repeat(2,1fr);
+  @include up(md){grid-template-columns:repeat(3,1fr)} @include up(lg){grid-template-columns:repeat(4,1fr);gap:24px}}
+.section{padding:56px 0}
+.toolbar{@include flex(space-between,center,14px);flex-wrap:wrap;margin:22px 0 28px}
+.chips{@include flex(flex-start,center,8px);flex-wrap:wrap}

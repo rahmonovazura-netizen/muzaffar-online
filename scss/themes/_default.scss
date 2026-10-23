@@ -1,0 +1,3 @@
+@use "../abstracts" as *;
+::selection{background:$c-primary;color:#fff}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1}.bg{display:none}}

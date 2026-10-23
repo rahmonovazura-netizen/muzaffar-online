@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="uz"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin — Fresh Market</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/main.css"></head><body>
+<div class="login-box" id="gate"><h2>🔐 Admin kirish</h2><input class="input" type="password" id="pw" placeholder="Parol"><button class="btn btn--primary" id="pwBtn" style="justify-content:center">Kirish</button></div>
+<div class="admin" id="app" hidden><aside><h2>🥬 Admin</h2><nav><a href="#products">Mahsulotlar</a><a href="#promo">Aksiyalar</a><a href="#orders">Buyurtmalar</a><a href="#messages">Xabarlar</a><a href="index.html">Saytga →</a></nav></aside>
+<main><div class="stats" id="st"></div>
+<section class="panel" id="products"><h3 style="margin-bottom:14px">Mahsulot qo'shish / tahrirlash</h3>
+<div class="form-row"><input class="input" id="f_name" placeholder="Nomi"><input class="input" id="f_emoji" placeholder="Emoji 🍎"><input class="input" id="f_cat" placeholder="Kategoriya"><input class="input" id="f_price" type="number" placeholder="Narx"><input class="input" id="f_img" placeholder="Rasm URL (ixtiyoriy)"></div>
+<button class="btn btn--primary btn--sm" id="save">Saqlash</button> <button class="btn btn--ghost btn--sm" id="reset">Asl holatga</button>
+<table style="margin-top:18px"><thead><tr><th></th><th>Nomi</th><th>Kategoriya</th><th>Narx</th><th></th></tr></thead><tbody id="rows"></tbody></table></section>
+<section class="panel" id="promo"><h3 style="margin-bottom:14px">Aksiya sozlamalari</h3>
+<div class="form-row promo-form"><label class="check"><input type="checkbox" id="p_active"> Aksiya faol</label><input class="input" id="p_percent" type="number" min="0" max="100" placeholder="Chegirma %"><input class="input" id="p_title" placeholder="Sarlavha"><input class="input" id="p_desc" placeholder="Tavsif"></div>
+<p class="muted" style="font-size:.85rem;margin-bottom:12px">Chegirma tizimga kirgan har bir mijozning savat jami summasiga qo'llanadi.</p>
+<button class="btn btn--primary btn--sm" id="savePromo">Aksiyani saqlash</button></section>
+<section class="panel" id="orders"><h3 style="margin-bottom:14px">Buyurtmalar</h3><table><thead><tr><th>Sana</th><th>Mijoz</th><th>Mahsulotlar</th><th>Jami</th></tr></thead><tbody id="ord"></tbody></table></section>
+<section class="panel" id="messages"><h3 style="margin-bottom:14px">Aloqa xabarlari</h3><table><thead><tr><th>Sana</th><th>Mijoz</th><th>Xabar</th></tr></thead><tbody id="msgs"></tbody></table></section>
+</main></div>
+<script src="js/config.js"></script><script src="js/data.js"></script><script src="js/admin.js"></script></body></html>
